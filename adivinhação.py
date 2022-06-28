@@ -39,13 +39,13 @@ def jogar():
         maior = chute > numero_secreto
         menor = chute < numero_secreto
         if (acertou):
-            print("você acertou animal e fez {} pontos!".format(pontos))
+            print("você acertou e fez {} pontos!".format(pontos))
             break
         else:
             if(maior):
-                print("Voce errou! o seu chute foi maior que o número secreto, corno!.")
+                print("Voce errou! o seu chute foi maior que o número secreto.")
             elif(menor):
-                print("Voce errou! o seu chute foi menor que o número secreto, corno.")
+                print("Voce errou! o seu chute foi menor que o número secreto.")
             pontos_perdidos = abs(numero_secreto - chute)  #40-20 = 20
             pontos = pontos - pontos_perdidos
 
